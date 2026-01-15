@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   let qty = 1;
-  let selectedColor = product.colors ? product.colors[0].name : "";
+
+  // ✅ SAFE DEFAULTS
+  let selectedColor = product.colors && product.colors.length > 0
+    ? product.colors[0].name
+    : "Default";
+
   let selectedImage = product.image;
 
   function updateTotal() {
@@ -31,6 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   window.selectColor = (name, img) => {
     selectedColor = name;
+    selectedImage = img; // ✅ FIXED (important)
     document.getElementById("mainImage").src = img;
     updateTotal();
   };
@@ -52,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   container.innerHTML = `
     <div class="product-page">
 
-      <div class="product-image" >
+      <div class="product-image">
         <img id="mainImage" src="${selectedImage}" loading="lazy">
       </div>
 
@@ -60,15 +66,23 @@ document.addEventListener("DOMContentLoaded", async () => {
         <h1>${product.title}</h1>
         <h2>₹${product.price}</h2>
 
-        ${product.colors ? `
+        ${
+          product.colors && product.colors.length > 0
+            ? `
           <p><b>Color:</b></p>
           <div class="color-list">
             ${product.colors.map(c => `
-              <img src="${c.image}" onclick="selectColor('${c.name}', '${c.image}')" loading="lazy">
+              <img 
+                src="${c.image}" 
+                onclick="selectColor('${c.name}', '${c.image}')"
+                loading="lazy"
+              >
             `).join("")}
           </div>
           <p>Selected Color: <span id="selectedColor">${selectedColor}</span></p>
-        ` : ""}
+        `
+            : `<p><b>Color:</b> Default</p>`
+        }
 
         <div class="qty-box">
           <button onclick="changeQty(-1)">−</button>
@@ -86,21 +100,4 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   updateTotal();
 });
-products.forEach(product => {
-  let colorsHTML = "";
 
-  if (product.color && product.color.length > 0) {
-    colorsHTML = product.color.map(c =>
-      `<span class="color" style="background:${c}"></span>`
-    ).join("");
-  }
-
-  productContainer.innerHTML += `
-    <div class="product">
-      <img src="${product.image}">
-      <h3>${product.name}</h3>
-      <p>₹${product.price}</p>
-      ${colorsHTML}
-    </div>
-  `;
-});
