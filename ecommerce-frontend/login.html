@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | ECOSTORE</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>ECOSTORE</h1>
+
+  <!-- 🔹 LOGIN FORM -->
+  <div id="loginForm">
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p>
+      Don’t have an account?
+      <span onclick="showSignup()">Sign up</span>
+    </p>
+  </div>
+
+  <!-- 🔹 SIGNUP FORM -->
+  <div id="signupForm" style="display:none">
+    <h2>Sign Up</h2>
+
+    <input type="text" id="signupName" placeholder="Full Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <input type="password" id="signupConfirm" placeholder="Confirm Password">
+
+    <button onclick="signup()">Sign Up</button>
+
+    <p>
+      Already have an account?
+      <span onclick="showLogin()">Login</span>
+    </p>
+  </div>
+</div>
+
+<script src="login.js"defer></script>
+</body>
+</html>

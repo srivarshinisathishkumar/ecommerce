@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "title": "Chain",
+    "price": 199,
+    "image": "asset/product1.webp",
+    "colors": []
+  },
+  {
+    "id": 2,
+    "title": "Minimal Chain",
+    "price": 149,
+    "image": "asset/product2.webp",
+    "colors": []
+  },
+  {
+    "id": 3,
+    "title": "Shoes",
+    "price": 799,
+    "image": "asset/product3.webp",
+    "colors": [
+      { "name": "Light Brown", "image": "asset/product3.webp" },
+      { "name": "Brown", "image": "asset/product3-1.webp" },
+      { "name": "Black", "image": "asset/product3-2.webp" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Shoes",
+    "price": 999,
+    "image": "asset/product4.webp",
+    "colors": [
+      { "name": "Light Brown", "image": "asset/product4.webp" },
+      { "name": "Brown", "image": "asset/product4-1.webp" },
+      { "name": "Gray", "image": "asset/product4-2.webp" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cotton Shirt",
+    "price": 999,
+    "image": "asset/product5.webp",
+    "colors": [
+      { "name": "Beige", "image": "asset/product5.webp" },
+      { "name": "Brown", "image": "asset/product5-1.webp" },
+      { "name": "Gray", "image": "asset/product5-2.webp" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Hoodie",
+    "price": 599,
+    "image": "asset/product6.webp",
+    "colors": [
+      { "name": "Brown", "image": "asset/product6.webp" },
+      { "name": "Gray", "image": "asset/product6-1.webp" },
+      { "name": "Blue", "image": "asset/product6-2.webp" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Dress",
+    "price": 499,
+    "image": "asset/product7.webp",
+    "colors": []
+  },
+  {
+    "id": 8,
+    "title": "Dress",
+    "price": 699,
+    "image": "asset/product8.webp",
+    "colors": [
+      { "name": "Brown", "image": "asset/product8.webp" },
+      { "name": "White", "image": "asset/product8-1.webp" }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Watch",
+    "price": 799,
+    "image": "asset/product9.webp",
+    "colors": [
+      { "name": "Brown", "image": "asset/product9.webp" },
+      { "name": "Dark Brown", "image": "asset/product9-1.webp" }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Bracelet",
+    "price": 199,
+    "image": "asset/product10.webp",
+    "colors": []
+  },
+  {
+    "id": 11,
+    "title": "Handbag",
+    "price": 599,
+    "image": "asset/product11.webp",
+    "colors": [
+      { "name": "Beige", "image": "asset/product11.webp" },
+      { "name": "Blue", "image": "asset/product11-1.webp" },
+      { "name": "Maroon", "image": "asset/product11-2.webp" },
+      { "name": "Brown", "image": "asset/product11-3.webp" }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Wallet",
+    "price": 299,
+    "image": "asset/product12.webp",
+    "colors": [
+      { "name": "Beige Light Brown", "image": "asset/product12.webp" },
+      { "name": "Maroon Blue", "image": "asset/product12-1.webp" },
+      { "name": "Brown Beige", "image": "asset/product12-2.webp" }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Perfume",
+    "price": 199,
+    "image": "asset/product13.webp",
+    "colors": [
+      { "name": "Jasmine", "image": "asset/product13.webp" },
+      { "name": "Orange", "image": "asset/product13-1.webp" }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Perfume",
+    "price": 149,
+    "image": "asset/product14.webp",
+    "colors": []
+  },
+  {
+    "id": 15,
+    "title": "Face Serum",
+    "price": 199,
+    "image": "asset/product15.webp",
+    "colors": []
+  },
+  {
+    "id": 16,
+    "title": "Perfume",
+    "price": 139,
+    "image": "asset/product16.webp",
+    "colors": [
+      { "name": "Lavender", "image": "asset/product16.webp" },
+      { "name": "Jasmine", "image": "asset/product16-1.webp" }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Conditioner",
+    "price": 129,
+    "image": "asset/product17.webp",
+    "colors": []
+  },
+  {
+    "id": 18,
+    "title": "Nail Polish",
+    "price": 99,
+    "image": "asset/product18.webp",
+    "colors": [
+      { "name": "Blue", "image": "asset/product18.webp" },
+      { "name": "Beige", "image": "asset/product18-1.webp" },
+      { "name": "Sky Blue", "image": "asset/product18-2.webp" },
+      { "name": "Pastel Blue", "image": "asset/product18-3.webp" }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Sunglasses",
+    "price": 119,
+    "image": "asset/product19.webp",
+    "colors": []
+  },
+  {
+    "id": 20,
+    "title": "Lipstick",
+    "price": 89,
+    "image": "asset/product20.webp",
+    "colors": [
+      { "name": "Pastel Pink", "image": "asset/product20.webp" },
+      { "name": "Dark Red", "image": "asset/product20-1.webp" },
+      { "name": "Black", "image": "asset/product20-2.webp" }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Face Wash",
+    "price": 299,
+    "image": "asset/product21.webp",
+    "colors": []
+  },
+  {
+    "id": 22,
+    "title": "Lip Stick",
+    "price": 199,
+    "image": "asset/product22.webp",
+    "colors": [
+      { "name": "Lip Shade", "image": "asset/product22.webp" },
+      { "name": "Maroon", "image": "asset/product22-1.webp" }
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Watch",
+    "price": 699,
+    "image": "asset/product23.webp",
+    "colors": []
+  },
+  {
+    "id": 24,
+    "title": "Bracelet",
+    "price": 199,
+    "image": "asset/product24.webp",
+    "colors": []
+  },
+  {
+    "id": 25,
+    "title": "Sunscreen",
+    "price": 399,
+    "image": "asset/product25.webp",
+    "colors": []
+  }
+]
+
