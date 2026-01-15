@@ -86,3 +86,21 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   updateTotal();
 });
+products.forEach(product => {
+  let colorsHTML = "";
+
+  if (product.color && product.color.length > 0) {
+    colorsHTML = product.color.map(c =>
+      `<span class="color" style="background:${c}"></span>`
+    ).join("");
+  }
+
+  productContainer.innerHTML += `
+    <div class="product">
+      <img src="${product.image}">
+      <h3>${product.name}</h3>
+      <p>₹${product.price}</p>
+      ${colorsHTML}
+    </div>
+  `;
+});
