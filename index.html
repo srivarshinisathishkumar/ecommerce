@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ECOSTORE</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"defer></script>
+
+<script type="module" src="firebase.js"defer></script>
+<script type="module" src="auth.js"defer></script>
+<script type="module" src="logout.js"defer></script>
+
+
+</head>
+<body>
+  <script type="module">
+  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+  onAuthStateChanged(auth, user => {
+    if (!user) {
+      window.location.href = "login.html";
+    }
+  });
+</script>
+
+<!-- 🔹 NAVBAR -->
+<header class="header">
+  <div class="logo">ECOSTORE</div>
+  <nav class="nav">
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('products')">Products</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+ <div class="search-box">
+  <input
+    type="text"
+    id="search products"
+    oninput="searchProducts(this.value)"
+  >
+</div>
+
+<div class="cart" onclick="window.location.href='cart.html'">
+  🛒<span class="badge" id="cart-count">0</span>
+</div>
+<button id="logoutBtn" style="display:none;">Logout</button>
+<button id="logoutBtn" onclick="logoutUser()">Logout</button>
+
+
+
+
+</header>
+
+<!-- 🔹 HOME -->
+<section id="home">
+  <section class="hero">
+  <div class="hero-overlay"></div>
+
+
+  <div class="hero-content">
+    <!-- LEFT CONTENT -->
+    <div class="hero-left">
+      <h1 class="hero-title">Welcome to Our Online Store</h1>
+      <p class="hero-subtitle">
+        Explore our latest and trending products at the best prices.
+      </p>
+
+
+   <div class="special-offer">
+  <h2>Special Offer</h2>
+  <p>Up to 50% Off</p>
+<button onclick="showSection('products')">Shop Now</button>
+
+</div>
+
+</div>
+     </section>   
+
+    </div>
+  </section>
+
+<!-- 🔹 PRODUCTS -->
+<section id="products" style="display:none">
+  <h2>Our Products</h2>
+  <div id="product-container"></div>
+</section>
+
+<!-- 🔹 ABOUT -->
+<section id="about" style="display:none">
+  <h2>About Us</h2>
+  <p>
+    ECOSTORE is a modern online shop providing stylish,
+    affordable, and high-quality products.
+  </p>
+</section>
+
+<!-- 🔹 CONTACT -->
+<section id="contact" style="display:none">
+  <h2>Contact Us</h2>
+  <p>Email: support@ecostore.com</p>
+  <p>Phone: +91 98765 43210</p>
+</section>
+
+
+<!-- 🔹 PRODUCTS -->
+<section id="products" style="display:none">
+  <h2 style="text-align:center;">Our Products</h2>
+
+ <div class="product-container">
+  <!-- LEFT: Main Image -->
+  <div class="main-image" loading="lazy">
+
+  </div>
+
+  <!-- RIGHT: Color Options -->
+  <div class="color-section">
+    <p><b>Color</b></p>
+    <div id="colorOptions"></div>
+    <p id="selectedColor"></p>
+  </div>
+</div>
+
+</body>
+</html>    
+
+

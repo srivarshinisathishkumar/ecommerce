@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="cart.js"defer></script>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">ECOSTORE</div>
+</header>
+
+<h2 style="text-align:center;">Your Cart</h2>
+
+<!-- CART ITEMS -->
+<div id="cart-container"></div>
+
+<!-- TOTAL -->
+<h3 style="text-align:center;">
+  Total: ₹<span id="totalPrice">0</span>
+</h3>
+
+<div style="text-align:center; margin: 20px;">
+  <button onclick="continueShopping()" class="continue-btn">
+    Continue Shopping
+  </button>
+</div>
+
+</body>
+</html>
+
